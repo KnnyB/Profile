@@ -10,7 +10,7 @@
 ======================================*/
 
 body {
-  background-color: #708090;
+  background-color: #101010;
   color: #4e4e4e;
 }
 
@@ -154,10 +154,11 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .subtitle-a {
-  color: black;
+  color: #fff;
 }
 
 .line-mf {
