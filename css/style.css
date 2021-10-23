@@ -137,11 +137,11 @@ a:hover {
 
 .title-s {
   font-weight: 600;
-  color: black;
+  color: white;
   font-size: 1.1rem;
 }
 .title-sub{
-  color:black;
+  color:white;
 }
 
 /*--/ Title A /--*/
@@ -162,9 +162,9 @@ a:hover {
 }
 
 .line-mf {
-  width: 40px;
+  width: 60px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #18d26e;
   margin: 0 auto;
 }
 
@@ -177,14 +177,14 @@ a:hover {
 .title-left {
   font-size: 2rem;
   position: relative;
-  color:black;
+  color:white;
 }
 
 .title-left:before {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #18d26e;
   width: 100px;
   bottom: -12px;
 }
@@ -198,7 +198,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: black;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -221,16 +221,17 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px #18d26e;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: #18d26e;
   color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
+  box-shadow: 0 0 0 3px white;
   transition: all 500ms ease;
 }
+
 
 /*------/ Ul resect /------*/
 
@@ -251,7 +252,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #0078ff;
+  color: #18d26e;
   margin-right: 10px;
 }
 
@@ -486,26 +487,26 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #18d26e;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #18d26e;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #18d26e;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #18d26e;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #18d26e;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -689,12 +690,12 @@ a:hover {
   margin-left: 10px;
 }
 .about-me {
-  color: black;
+  color: white;
 }
 
 
 .skill-mf span {
-  color: black;
+  color: white;
 }
 
 .skill-mf .progress {
@@ -707,6 +708,98 @@ a:hover {
 .skill-mf .progress .progress-bar {
   height: .7rem;
   background-color: #32CD32;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #4ceb95;
+  margin: 4px 10px;
+}
+.section-title p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.resume{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #18d26e;
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+.resume .resume-item ul {
+  padding-left: 20px;
+  color: white;
+}
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+  color: white;
+}
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+  color: white;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #18d26e;
+  border: 2px solid #18d26e;
+  color: white;
 }
 
 /*======================================
@@ -722,9 +815,12 @@ a:hover {
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  color: black;
+  background-color: #00FF7F;
+  box-shadow: 0 0 0 10px  #7FFFD4;
+}
+.ico-circle{
+  box-shadow: 0 0 0 10px #18d26e;
 }
 
 .service-box .service-ico {
@@ -765,7 +861,7 @@ a:hover {
   height: 60px;
   width: 60px;
   line-height: 1.8;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 0 0 10px #18d26e;
 }
 
 .counter-num .counter {
@@ -1073,6 +1169,9 @@ a:hover {
 .contact-mf {
   margin-top: 4rem;
 }
+.more-info{
+  color: white;
+}
 
 /*======================================
 //--//-->   FOOTER
@@ -1165,7 +1264,7 @@ footer .credits a {
 }
 
 .button-a {
-  background-color: #0078ff;
+  background-color: #32CD32;
   color: #fff;
   border-color: #cde1f8;
 }
